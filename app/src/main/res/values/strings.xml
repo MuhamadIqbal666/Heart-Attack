@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Heart Attack</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="nav_about_title">About</string>
+    <string name="nav_dataset_title">Dataset</string>
+    <string name="nav_features_title">Features</string>
+    <string name="nav_model_title">Model</string>
+    <string name="nav_modelsimulation_title">Model Simulation</string>
+    <string name="Deskripsi">Heart Attack app is designed to provide information, detect and assist in emergencies related to heart attacks.</string>
+    <string name="Desc_home">Heart Attack Prediction application is a machine learning-based application that predicts the likelihood of heart attack in individuals based on several risk factors and health characteristics. Model training data is taken from the heart attack prediction dataset on Kaggle. here is how to use this application:</string>
+    <string name="cara">1. Value input : Enter the values in the input form for the patient you want to predict.</string>
+    <string name="cara2">2. Prediction process :  Once all the input values have been entered, the application will use the trained model to process the data.</string>
+    <string name="cara3">3. Prediction result : Application will provide output in the form of a prediction of whether the patient is suffering from a heart attack or not.</string>
+</resources>

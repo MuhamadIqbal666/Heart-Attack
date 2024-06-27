@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentModel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#f5f5f5">
+
+        <!-- Logo ImageView -->
+        <ImageView
+            android:id="@+id/logo_image"
+            android:layout_width="212dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/logomodel" />
+
+        <!-- Container for Model Architecture -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/text_container_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/model_architecture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Architecture Model"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/bat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/model_architecture_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Architecture used includes: The Input Layer receives the raw data to be processed. Hidden Layers consist of one or more layers that process and transform the data. The Output Layer produces a prediction or final decision."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Container for Model ML -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/text_container_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/model_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ML Model"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/bat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/model_name_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANN model is an artificial neural network model that consists of input layers, hidden layers, and output layers. Each layer consists of a number of interconnected neurons."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Container for Model Accuracy -->
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/text_container_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/model_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accuracy Result"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@color/bat"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/model_accuracy_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The accuracy of the model used is 75%."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

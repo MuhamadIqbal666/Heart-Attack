@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentFitur">
+
+    <!-- Background Container -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/text_container_background"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Dataset Title -->
+        <TextView
+            android:id="@+id/textDatasetTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bat"
+            android:paddingBottom="8dp"
+            android:text="Fitur"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/textAgeTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Age (Int64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textAgeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Information about age, measured in years."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Gender -->
+        <TextView
+            android:id="@+id/textGenderTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Gender (Int64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textGenderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Information on gender, coded as a number (0 for female and 1 for male)."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Impulse -->
+        <TextView
+            android:id="@+id/textImpulseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Impulse (Int64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textImpulseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Number of heart beats per minute or impulse."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Pressure High -->
+        <TextView
+            android:id="@+id/textPressureHighTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Pressure High (Int64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPressureHighDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Subject's systolic blood pressure value, which is the pressure in the arteries when the heart contracts and pumps blood, measured in millimeters of mercury (mmHg)."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Pressure Low -->
+        <TextView
+            android:id="@+id/textPressureLowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Pressure Low (Int64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPressureLowDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Subject's diastolic blood pressure value, which is the pressure in the arteries when the heart is at rest between contractions, measured in mmHg."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Glucose -->
+        <TextView
+            android:id="@+id/textGlucoseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Glucose (float64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textGlucoseDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Value of the glucose level in the subject's blood, measured in mg/dL (milligrams per deciliter) or mmol/L (millimol per liter)."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- KCM -->
+        <TextView
+            android:id="@+id/textKCMTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="KCM (Float64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textKCMDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Potassium concentration value in the subject's blood, measured in mmol/L."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Separation Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="#FFFFFF" />
+
+        <!-- Troponin -->
+        <TextView
+            android:id="@+id/textTroponinTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:text="Troponin (Float64)"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textTroponinDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Blood troponin level, measured in ng/mL (nanograms per milliliter)."
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

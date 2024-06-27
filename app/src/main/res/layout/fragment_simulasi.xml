@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentSimulasi">
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Input Age (14 - 103)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/clearAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editAge"
+        app:layout_constraintTop_toTopOf="@id/editAge"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Gender 0=Male,1=Female"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editAge"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editGender"
+        app:layout_constraintTop_toTopOf="@id/editGender"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editImpulse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Impulse (20 - 1111)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editGender"
+        app:layout_constraintStart_toStartOf="@+id/editGender"
+        app:layout_constraintTop_toBottomOf="@+id/editGender"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearImpulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editImpulse"
+        app:layout_constraintTop_toTopOf="@id/editImpulse"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editPressureHigh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Pressure High (42 - 223)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editImpulse"
+        app:layout_constraintStart_toStartOf="@+id/editImpulse"
+        app:layout_constraintTop_toBottomOf="@+id/editImpulse"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearPressureHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editPressureHigh"
+        app:layout_constraintTop_toTopOf="@id/editPressureHigh"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editPressureLow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Pressure Low (38 - 154)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editPressureHigh"
+        app:layout_constraintStart_toStartOf="@+id/editPressureHigh"
+        app:layout_constraintTop_toBottomOf="@+id/editPressureHigh"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearPressureLow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editPressureLow"
+        app:layout_constraintTop_toTopOf="@id/editPressureLow"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editGlucose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Glucose (35 - 541)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editPressureLow"
+        app:layout_constraintStart_toStartOf="@+id/editPressureLow"
+        app:layout_constraintTop_toBottomOf="@+id/editPressureLow"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearGlucose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editGlucose"
+        app:layout_constraintTop_toTopOf="@id/editGlucose"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editKCM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input KCM (0.32 - 300)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editGlucose"
+        app:layout_constraintStart_toStartOf="@+id/editGlucose"
+        app:layout_constraintTop_toBottomOf="@+id/editGlucose"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearKCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editKCM"
+        app:layout_constraintTop_toTopOf="@id/editKCM"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/editTroponin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Troponin (0 - 10.3)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editKCM"
+        app:layout_constraintStart_toStartOf="@+id/editKCM"
+        app:layout_constraintTop_toBottomOf="@+id/editKCM"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/clearTroponin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_clear_text"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/editTroponin"
+        app:layout_constraintTop_toTopOf="@id/editTroponin"
+        android:padding="8dp"
+        android:contentDescription="Clear input"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bat"
+        android:text="PREDICT"
+        app:layout_constraintEnd_toEndOf="@+id/editTroponin"
+        app:layout_constraintStart_toStartOf="@+id/editTroponin"
+        app:layout_constraintTop_toBottomOf="@+id/editTroponin"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
